@@ -66,11 +66,9 @@ const themes = [
     'theme-bead', 
     'theme-block', 
     'theme-stone', 
-    'theme-strawberry', 
     'theme-icecream', 
     'theme-ddakji', 
-    'theme-star', 
-    'theme-animal'
+    'theme-star'
 ];
 const colorPairs = ['color-pair-1', 'color-pair-2', 'color-pair-3'];
 
@@ -78,15 +76,9 @@ function randomizeTheme() {
     // Remove classes one by one to support older smartboard browsers that don't support multiple arguments
     themes.forEach(t => beadsContainer.classList.remove(t));
     colorPairs.forEach(c => document.body.classList.remove(c));
-    document.body.classList.remove('color-pair-strawberry');
     
     const randomTheme = themes[Math.floor(Math.random() * themes.length)];
-    let randomColorPair = colorPairs[Math.floor(Math.random() * colorPairs.length)];
-    
-    // Force specific color pair for strawberry to prevent unnatural colors
-    if (randomTheme === 'theme-strawberry') {
-        randomColorPair = 'color-pair-strawberry';
-    }
+    const randomColorPair = colorPairs[Math.floor(Math.random() * colorPairs.length)];
     
     beadsContainer.classList.add(randomTheme);
     document.body.classList.add(randomColorPair);

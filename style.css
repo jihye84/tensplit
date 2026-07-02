@@ -41,11 +41,6 @@ body {
     --c2-light: #ffb75e; --c2-base: #e67e22; --c2-dark: #d35400; --c1-text: #e67e22; --c2-shadow: rgba(230, 126, 34, 0.4); --c2-text: #d35400;
 }
 
-.color-pair-strawberry {
-    --c1-light: #ffb199; --c1-base: #ff0844; --c1-dark: #c0392b; --c1-shadow: rgba(255, 8, 68, 0.4); --c1-text: #c0392b; /* Red */
-    --c2-light: #a8e063; --c2-base: #56ab2f; --c2-dark: #27ae60; --c2-shadow: rgba(86, 171, 47, 0.4); --c2-text: #27ae60; /* Green */
-}
-
 .text-color-1 { color: var(--c1-text); font-weight: 900; }
 .text-color-2 { color: var(--c2-text); font-weight: 900; }
 
@@ -232,19 +227,15 @@ input:checked + .slider:before {
 }
 
 /* Cute Emoji Themes */
-.theme-strawberry .bead,
 .theme-icecream .bead,
-.theme-star .bead,
-.theme-animal .bead {
+.theme-star .bead {
     background: transparent !important;
     box-shadow: none !important;
     border-radius: 0 !important;
 }
 
-.theme-strawberry .bead::before,
 .theme-icecream .bead::before,
-.theme-star .bead::before,
-.theme-animal .bead::before {
+.theme-star .bead::before {
     font-size: calc(var(--bead-size) * 0.9);
     line-height: var(--bead-size);
     display: flex;
@@ -255,42 +246,27 @@ input:checked + .slider:before {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
-.theme-strawberry .bead::before { 
-    content: '🍓'; 
-    filter: hue-rotate(45deg); /* Orange default */
-}
 .theme-icecream .bead::before { content: '🍦'; }
 .theme-star .bead::before { content: '⭐'; }
-.theme-animal .bead::before { content: '🐶'; }
-
-/* Specific Strawberry Tinting to avoid unnatural colors */
-.color-pair-strawberry .theme-strawberry .bead.group-1 { filter: none; } /* Red */
-.color-pair-strawberry .theme-strawberry .bead.group-2 { filter: hue-rotate(90deg); } /* Light Green */
 
 /* Emoji Tinting for General Color Pairs */
 .color-pair-1 .theme-icecream .bead.group-1,
-.color-pair-1 .theme-star .bead.group-1,
-.color-pair-1 .theme-animal .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(170deg) saturate(6); }
+.color-pair-1 .theme-star .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(170deg) saturate(6); }
 
 .color-pair-1 .theme-icecream .bead.group-2,
-.color-pair-1 .theme-star .bead.group-2,
-.color-pair-1 .theme-animal .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(330deg) saturate(6); }
+.color-pair-1 .theme-star .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(330deg) saturate(6); }
 
 .color-pair-2 .theme-icecream .bead.group-1,
-.color-pair-2 .theme-star .bead.group-1,
-.color-pair-2 .theme-animal .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(20deg) saturate(8); }
+.color-pair-2 .theme-star .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(20deg) saturate(8); }
 
 .color-pair-2 .theme-icecream .bead.group-2,
-.color-pair-2 .theme-star .bead.group-2,
-.color-pair-2 .theme-animal .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(90deg) saturate(5); }
+.color-pair-2 .theme-star .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(90deg) saturate(5); }
 
 .color-pair-3 .theme-icecream .bead.group-1,
-.color-pair-3 .theme-star .bead.group-1,
-.color-pair-3 .theme-animal .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(250deg) saturate(5); }
+.color-pair-3 .theme-star .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(250deg) saturate(5); }
 
 .color-pair-3 .theme-icecream .bead.group-2,
-.color-pair-3 .theme-star .bead.group-2,
-.color-pair-3 .theme-animal .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(350deg) saturate(6); }
+.color-pair-3 .theme-star .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(350deg) saturate(6); }
 
 /* Theme: Ddakji (딱지) */
 .theme-ddakji .bead {
