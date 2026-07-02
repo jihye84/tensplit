@@ -78,9 +78,15 @@ function randomizeTheme() {
     // Remove classes one by one to support older smartboard browsers that don't support multiple arguments
     themes.forEach(t => beadsContainer.classList.remove(t));
     colorPairs.forEach(c => document.body.classList.remove(c));
+    document.body.classList.remove('color-pair-strawberry');
     
     const randomTheme = themes[Math.floor(Math.random() * themes.length)];
-    const randomColorPair = colorPairs[Math.floor(Math.random() * colorPairs.length)];
+    let randomColorPair = colorPairs[Math.floor(Math.random() * colorPairs.length)];
+    
+    // Force specific color pair for strawberry to prevent unnatural colors
+    if (randomTheme === 'theme-strawberry') {
+        randomColorPair = 'color-pair-strawberry';
+    }
     
     beadsContainer.classList.add(randomTheme);
     document.body.classList.add(randomColorPair);
