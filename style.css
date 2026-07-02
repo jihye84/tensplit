@@ -15,17 +15,13 @@
 }
 
 body {
-    font-family: 'Jua', 'Nanum Gothic', sans-serif;
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-    color: var(--text-color);
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
     font-family: 'GmarketSans', 'NanumSquareRound', sans-serif;
     background: var(--bg-gradient);
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
