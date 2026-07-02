@@ -251,20 +251,40 @@ input:checked + .slider:before {
 }
 
 .theme-strawberry .bead::before { content: '🍓'; }
-.theme-strawberry .bead.group-1::before { content: '🍓'; }
-.theme-strawberry .bead.group-2::before { content: '🍇'; }
-
 .theme-icecream .bead::before { content: '🍦'; }
-.theme-icecream .bead.group-1::before { content: '🍦'; }
-.theme-icecream .bead.group-2::before { content: '🍧'; }
-
 .theme-star .bead::before { content: '⭐'; }
-.theme-star .bead.group-1::before { content: '🌟'; }
-.theme-star .bead.group-2::before { content: '🌙'; }
-
 .theme-animal .bead::before { content: '🐶'; }
-.theme-animal .bead.group-1::before { content: '🐶'; }
-.theme-animal .bead.group-2::before { content: '🐱'; }
+
+/* Emoji Tinting for Color Pairs */
+.color-pair-1 .theme-strawberry .bead.group-1,
+.color-pair-1 .theme-icecream .bead.group-1,
+.color-pair-1 .theme-star .bead.group-1,
+.color-pair-1 .theme-animal .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(170deg) saturate(6); }
+
+.color-pair-1 .theme-strawberry .bead.group-2,
+.color-pair-1 .theme-icecream .bead.group-2,
+.color-pair-1 .theme-star .bead.group-2,
+.color-pair-1 .theme-animal .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(330deg) saturate(6); }
+
+.color-pair-2 .theme-strawberry .bead.group-1,
+.color-pair-2 .theme-icecream .bead.group-1,
+.color-pair-2 .theme-star .bead.group-1,
+.color-pair-2 .theme-animal .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(20deg) saturate(8); }
+
+.color-pair-2 .theme-strawberry .bead.group-2,
+.color-pair-2 .theme-icecream .bead.group-2,
+.color-pair-2 .theme-star .bead.group-2,
+.color-pair-2 .theme-animal .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(90deg) saturate(5); }
+
+.color-pair-3 .theme-strawberry .bead.group-1,
+.color-pair-3 .theme-icecream .bead.group-1,
+.color-pair-3 .theme-star .bead.group-1,
+.color-pair-3 .theme-animal .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(250deg) saturate(5); }
+
+.color-pair-3 .theme-strawberry .bead.group-2,
+.color-pair-3 .theme-icecream .bead.group-2,
+.color-pair-3 .theme-star .bead.group-2,
+.color-pair-3 .theme-animal .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(350deg) saturate(6); }
 
 /* Theme: Ddakji (딱지) */
 .theme-ddakji .bead {
