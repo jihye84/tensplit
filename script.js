@@ -62,12 +62,22 @@ function initBeads() {
     randomizeAllBeads();
 }
 
-const themes = ['theme-bead', 'theme-block', 'theme-stone'];
+const themes = [
+    'theme-bead', 
+    'theme-block', 
+    'theme-stone', 
+    'theme-strawberry', 
+    'theme-icecream', 
+    'theme-ddakji', 
+    'theme-star', 
+    'theme-animal'
+];
 const colorPairs = ['color-pair-1', 'color-pair-2', 'color-pair-3'];
 
 function randomizeTheme() {
-    beadsContainer.classList.remove(...themes);
-    document.body.classList.remove(...colorPairs);
+    // Remove classes one by one to support older smartboard browsers that don't support multiple arguments
+    themes.forEach(t => beadsContainer.classList.remove(t));
+    colorPairs.forEach(c => document.body.classList.remove(c));
     
     const randomTheme = themes[Math.floor(Math.random() * themes.length)];
     const randomColorPair = colorPairs[Math.floor(Math.random() * colorPairs.length)];

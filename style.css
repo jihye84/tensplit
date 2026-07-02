@@ -226,6 +226,73 @@ input:checked + .slider:before {
     box-shadow: 2px 4px 6px rgba(0,0,0,0.3), inset -2px -4px 4px rgba(0,0,0,0.2);
 }
 
+/* Cute Emoji Themes */
+.theme-strawberry .bead,
+.theme-icecream .bead,
+.theme-star .bead,
+.theme-animal .bead {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.theme-strawberry .bead::before,
+.theme-icecream .bead::before,
+.theme-star .bead::before,
+.theme-animal .bead::before {
+    font-size: calc(var(--bead-size) * 0.9);
+    line-height: var(--bead-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.theme-strawberry .bead::before { content: '🍓'; }
+.theme-strawberry .bead.group-1::before { content: '🍓'; }
+.theme-strawberry .bead.group-2::before { content: '🍇'; }
+
+.theme-icecream .bead::before { content: '🍦'; }
+.theme-icecream .bead.group-1::before { content: '🍦'; }
+.theme-icecream .bead.group-2::before { content: '🍧'; }
+
+.theme-star .bead::before { content: '⭐'; }
+.theme-star .bead.group-1::before { content: '🌟'; }
+.theme-star .bead.group-2::before { content: '🌙'; }
+
+.theme-animal .bead::before { content: '🐶'; }
+.theme-animal .bead.group-1::before { content: '🐶'; }
+.theme-animal .bead.group-2::before { content: '🐱'; }
+
+/* Theme: Ddakji (딱지) */
+.theme-ddakji .bead {
+    background: #e1b12c;
+    border: 3px solid #c23616;
+    border-radius: 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.theme-ddakji .bead::before, .theme-ddakji .bead::after {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 3px;
+    background: #c23616;
+    top: 50%;
+    left: -25%;
+    transform-origin: center;
+}
+.theme-ddakji .bead::before { transform: translateY(-50%) rotate(45deg); }
+.theme-ddakji .bead::after { transform: translateY(-50%) rotate(-45deg); }
+
+.theme-ddakji .bead.group-1 { background: var(--c1-base); border-color: var(--c1-dark); }
+.theme-ddakji .bead.group-1::before, .theme-ddakji .bead.group-1::after { background: var(--c1-dark); }
+
+.theme-ddakji .bead.group-2 { background: var(--c2-base); border-color: var(--c2-dark); }
+.theme-ddakji .bead.group-2::before, .theme-ddakji .bead.group-2::after { background: var(--c2-dark); }
+
 #drawing-canvas {
     position: absolute;
     top: 0;
