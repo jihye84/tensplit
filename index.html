@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>10 가르기 (Splitting 10)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🌟 10 가르기 연습 🌟</h1>
+            <p class="subtitle">마우스나 펜으로 선을 그어 구슬을 나누어 보세요!</p>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="color-toggle" checked>
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">색깔 변화 켜기</span>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <div id="beads-container"></div>
+            <canvas id="drawing-canvas"></canvas>
+        </main>
+        
+        <div id="bottom-panel" class="hidden-panel">
+            <div class="result-text-group">
+                <p id="result-sentence" style="visibility: hidden;">10은 ?과 ?로 가르기할 수 있습니다.</p>
+            </div>
+            <div class="btn-group">
+                <button id="show-answer-btn" class="btn">정답 확인 👀</button>
+                <button id="reset-btn" class="btn">다시 하기 🔄</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
