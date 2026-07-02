@@ -227,14 +227,12 @@ input:checked + .slider:before {
 }
 
 /* Cute Emoji Themes */
-.theme-icecream .bead,
 .theme-star .bead {
     background: transparent !important;
     box-shadow: none !important;
     border-radius: 0 !important;
 }
 
-.theme-icecream .bead::before,
 .theme-star .bead::before {
     font-size: calc(var(--bead-size) * 0.9);
     line-height: var(--bead-size);
@@ -246,26 +244,19 @@ input:checked + .slider:before {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
-.theme-icecream .bead::before { content: '🍦'; }
 .theme-star .bead::before { content: '⭐'; }
 
 /* Emoji Tinting for General Color Pairs */
-.color-pair-1 .theme-icecream .bead.group-1,
 .color-pair-1 .theme-star .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(170deg) saturate(6); }
 
-.color-pair-1 .theme-icecream .bead.group-2,
 .color-pair-1 .theme-star .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(330deg) saturate(6); }
 
-.color-pair-2 .theme-icecream .bead.group-1,
 .color-pair-2 .theme-star .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(20deg) saturate(8); }
 
-.color-pair-2 .theme-icecream .bead.group-2,
 .color-pair-2 .theme-star .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(90deg) saturate(5); }
 
-.color-pair-3 .theme-icecream .bead.group-1,
 .color-pair-3 .theme-star .bead.group-1 { filter: grayscale(1) sepia(1) hue-rotate(250deg) saturate(5); }
 
-.color-pair-3 .theme-icecream .bead.group-2,
 .color-pair-3 .theme-star .bead.group-2 { filter: grayscale(1) sepia(1) hue-rotate(350deg) saturate(6); }
 
 /* Theme: Ddakji (딱지) */

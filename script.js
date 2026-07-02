@@ -66,7 +66,6 @@ const themes = [
     'theme-bead', 
     'theme-block', 
     'theme-stone', 
-    'theme-icecream', 
     'theme-ddakji', 
     'theme-star'
 ];
